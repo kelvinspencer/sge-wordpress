@@ -1,0 +1,81 @@
+.mh-importer-info {
+    line-height: 1.4;
+    font-size: 24px;
+    margin: 12px 0 36px;
+}
+
+.mh-importer__start {
+    box-shadow: 0px 2px 5px rgba(24, 24, 24, 0.4);
+    background: #32373c;
+    color: #fff;
+    margin: 0 24px 24px 0;
+    padding: 12px;
+    max-width: 700px;
+}
+
+.mh-importer__start:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mh-importer__card {
+    max-width: 300px;
+    float: left;
+    box-shadow: 0px 2px 5px rgba(24, 24, 24, 0.4);
+    background: #fff;
+    margin: 0 24px 24px 0;
+    padding: 12px;
+}
+
+.mh-importer__card img {
+    max-width: 100%;
+    border: 1px solid #f1f1f1;
+}
+
+.mh-importer__card-info {
+    margin-bottom: 24px;
+}
+
+.mh-importer-info .dashicons {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+}
+
+.mh-importer-list {
+    list-style: disc;
+    margin-left: 24px;
+    margin-bottom: 24px;
+}
+
+.mh-importer-loading-wrapper {
+    width: 100%;
+    float: left;
+}
+
+.mh-importer-loading {
+    box-shadow: 0px 2px 5px rgba(24, 24, 24, 0.4);
+    background: #fff;
+    padding: 24px;
+    float: left;
+}
+
+.mh-importer__loaded {
+    padding: 24px;
+    box-shadow: 0px 2px 5px rgba(24, 24, 24, 0.4);
+    background: #fff;
+    float: left;
+    margin: 24px 15px 2px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.mh-importer__speed {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.mh-importer__speed div {
+    margin-bottom: 24px;
+}
