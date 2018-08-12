@@ -1,0 +1,22 @@
+.mh-estate__section--details,
+.post-content {
+  .essb_links.essb_template_flat-retina li a .essb_network_name {
+    margin-right: 16px;
+  }
+  .essb_links.essb_template_flat-retina li a {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-radius: 0;
+  }
+  .essb_links.essb_template_flat-retina {
+    word-wrap: normal !important;
+    clear: both;
+    margin: -2px 0 22px 0;
+  }
+}
+
+.essb-location-customize,
+#wp-admin-bar-essb,
+.essb-customizer-toggle {
+  display: none !important;
+}

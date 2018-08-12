@@ -1,0 +1,37 @@
+.mh-2-col-image {
+  width: 100%;
+  position: relative;
+  float: left;
+  padding: 0 15px;
+  @include breakpoint(sm) {
+    width: 50%;
+    overflow: hidden !important;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      max-width: none;
+    }
+  }
+}
+
+//fix compose mode image size
+.compose-mode .mh-2-col-image .vc_element {
+  position: static;
+}
+
+.mh-2-col-text {
+  width: 100%;
+  float: right;
+  order: 10;
+  padding: 24px 15px 12px 15px !important;
+  @include breakpoint(sm) {
+    order: 0;
+    width: 50%;
+    padding: 60px 30px !important;
+  }
+  @include breakpoint(lg) {
+    padding: 90px 30px !important;
+  }
+}

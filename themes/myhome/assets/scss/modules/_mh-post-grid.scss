@@ -1,0 +1,120 @@
+/* Post Grid */
+.mh-post-grid {
+  margin-bottom: 12px;
+  padding: 12px 0 24px 0;
+  background: #f2f2f2;
+  margin-bottom: 24px;
+  @include clearfix;
+  &.has-post-thumbnail {
+    padding: 0 0 12px 0;
+  }
+}
+
+.mh-post-grid--white {
+  background: #fff;
+}
+
+.mh-post-grid--dark {
+  background: #333;
+  color: #fff;
+  .mh-post-grid__heading a {
+    color: #fff;
+  }
+}
+
+.mh-post-grid__thumbnail {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+  @include mh-img-hover();
+  display: inline-block;
+  .mh-thumbnail__inner img {
+    max-height: 100%;
+  }
+}
+
+.mh-post-grid__inner {
+  position: relative;
+  padding: 0 18px;
+}
+
+.mh-post-grid__heading {
+  padding-top: 12px;
+  margin-bottom: 12px;
+  @include clearfix();
+  a {
+    font-weight: 700;
+  }
+}
+
+.mh-post-grid__excerpt {
+  margin-bottom: 12px;
+}
+
+.mh-post-grid__btn-wrapper {
+  min-height: 48px;
+  a {
+    position: absolute;
+    bottom: 0;
+    right: 18px;
+  }
+}
+
+.mh-post-grid__thumbnail {
+  .mh-thumbnail__inner:not(.mh-thumbnail__inner--horizontal):not(.mh-thumbnail__inner--square):not(.mh-thumbnail__inner--vertical) m {
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    padding-bottom: 62.5%;
+    img {
+      max-height: none;
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+      width: auto;
+      max-width: none;
+      height: auto;
+    }
+  }
+}
+
+.mh-post-grid__thumbnail {
+  .mh-thumbnail__inner--vertical,
+  .mh-thumbnail__inner--horizontal,
+  .mh-thumbnail__inner--square {
+    padding-bottom: 0;
+  }
+}
+
+.mh-post-grid__thumbnail .mh-thumbnail__inner.mh-thumbnail__inner--vertical img {
+  min-height: initial;
+  min-width: initial;
+  max-height: initial;
+  max-width: initial;
+  width: initial;
+  height: initial;
+  position: static;
+}
+
+.mh-post-grid--img-absolute {
+  padding: 0 0 12px 0;
+  .mh-post-grid__thumbnail {
+    display: block;
+  }
+  .mh-post-grid__thumbnail {
+    padding-bottom: 62.5%;
+    position: relative;
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    max-width: initial;
+    max-height: initial;
+  }
+}
